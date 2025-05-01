@@ -1,0 +1,128 @@
+/* General page styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+              url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1950&q=80');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* Main app container */
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #f8f9fa;
+  margin-bottom: 30px;
+}
+
+/* Form section */
+.form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.form input {
+  flex: 1 1 45%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.form button {
+  flex: 1 1 100%;
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #218838;
+}
+
+/* List section */
+.list h2 {
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+  color: #ffffff;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.list li {
+  background-color: rgba(255, 255, 255, 0.15);
+  margin-bottom: 10px;
+  padding: 15px 20px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.list li strong {
+  display: block;
+  font-size: 1.2rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.buttons button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.buttons button:first-child {
+  background-color: #007bff;
+  color: white;
+}
+
+.buttons button:last-child {
+  background-color: #dc3545;
+  color: white;
+}
+
+.buttons button:hover {
+  transform: scale(1.05);
+}
